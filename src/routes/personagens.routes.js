@@ -3,6 +3,16 @@ const router = express.Router();
 
 const personagensController = require('../controllers/personagens.controller');
 
+router.get('/', personagensController.homePersonagemController);
+router.get('/find-personagens', personagensController.findPersonagensController);
+router.get('/find-personagens/:id', personagensController.findPersonagemByIdController);
+
+router.post('/add', personagensController.addPersonagemController);
+
+router.put('/update/:id', personagensController.updatePersonagemController);
+
+router.delete('/delete/:id', personagensController.deletePersonagemController);
+
 
 
 module.exports = router;
