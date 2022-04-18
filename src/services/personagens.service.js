@@ -48,17 +48,17 @@ const findPersonagensService = () => {
 }
 
 const findPersonagemByIdService = id => {
-    return personagens.find(personagem >= personagem.id == id);
+    return personagens.find(personagem => personagem.id == id);
 }
 
 const addPersonagemService = personagem => {
     personagens.push(personagem);
-    return 'adicionado com sucesso';
+    return 'ok';
 }
 
 const updatePersonagemService = (id, personagemEdited) => {
     personagemEdited['id'] = id;
-    const personagemIndex = personagens.findIndex(personagens => personagem.id == id);
+    const personagemIndex = personagens.findIndex(personagem => personagem.id == id);
     personagens[personagemIndex] = personagemEdited
     return personagemEdited;
 }

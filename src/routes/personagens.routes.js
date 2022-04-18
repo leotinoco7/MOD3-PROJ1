@@ -5,7 +5,7 @@ const personagensController = require('../controllers/personagens.controller');
 
 router.get('/', personagensController.homePersonagemController);
 router.get('/find-personagens', personagensController.findPersonagensController);
-router.get('/find-personagens/:id', personagensController.findPersonagemByIdController);
+router.get('/find-personagem/:id', personagensController.findPersonagemByIdController);
 
 router.post('/add', personagensController.addPersonagemController);
 
